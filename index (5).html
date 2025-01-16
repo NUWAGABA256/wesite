@@ -1,0 +1,48 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme Rating</title>
+    <script>
+        function rateTheme(themeId, rating) {
+            // Store the rating for the theme
+            const themeRatingElement = document.getElementById(`rating-${themeId}`);
+            themeRatingElement.innerText = `Rating: ${rating} star${rating > 1 ? 's' : ''}`;
+        }
+    </script>
+</head>
+<body>
+
+    <h1>Rate Our Themes</h1>
+
+    <div>
+        <h2>Theme 1</h2>
+        <div>
+            <span onclick="rateTheme('theme1', 1)">⭐</span>
+            <span onclick="rateTheme('theme1', 2)">⭐</span>
+            <span onclick="rateTheme('theme1', 3)">⭐</span>
+            <span onclick="rateTheme('theme1', 4)">⭐</span>
+            <span onclick="rateTheme('theme1', 5)">⭐</span>
+        </div>
+        <p id="rating-theme1">Rating: Not Rated</p>
+    </div>
+
+    <div>
+        <h2>Theme 2</h2>
+        <div>
+            <span onclick="rateTheme('theme2', 1)">⭐</span>
+            <span onclick="rateTheme('theme2', 2)">⭐</span>
+            <span onclick="rateTheme('theme2', 3)">⭐</span>
+            <span onclick="rateTheme('theme2', 4)">⭐</span>
+            <span onclick="rateTheme('theme2', 5)"> </span>
+            </div>
+            <div>
+            <h3>Theme 3</h3>
+                <span onclick="rateTheme('theme1', 1)">⭐</span>
+                <span onclick="rateTheme('theme1', 2)">⭐</span>
+                <span onclick="rateTheme('theme1', 3)">⭐</span>
+                <span onclick="rateTheme('theme1', 4)">⭐</span>
+                <span onclick="rateTheme('theme1', 5)">⭐</span>
+            </div>
